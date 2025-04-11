@@ -9,7 +9,7 @@ const Footer = () => {
       <Grid container spacing={4} justifyContent="space-between">
         <Grid item xs={12} md={4}>
           <Typography variant="h6" fontWeight="bold">
-            GlobeStay<span style={{ color: '#fff' }}>.com</span>
+            Globe Stay<span style={{ color: '#fff' }}>.com</span>
           </Typography>
           <Box mt={2}>
             <Typography variant="body2" gutterBottom>Subscribe to our Newsletter</Typography>
