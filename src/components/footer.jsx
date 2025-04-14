@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Grid, TextField, Typography, IconButton } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography, IconButton, Link} from '@mui/material';
 import { Facebook, Twitter, Instagram } from '@mui/icons-material';
  
 
@@ -56,6 +56,7 @@ const Footer = () => {
           <Typography variant="subtitle2" gutterBottom>Help</Typography>
           <Typography variant="body2">FAQs</Typography>
           <Typography variant="body2">Contact Us</Typography>
+          <Typography variant="body2">Careers</Typography>
         </Grid>
 
         <Grid item xs={12} md={2} display="flex" flexDirection="column" alignItems="flex-end">
@@ -67,19 +68,31 @@ const Footer = () => {
       </Grid>
 
       <Box mt={5} display="flex" justifyContent="space-between" flexWrap="wrap">
-        <Box display="flex" gap={2}>
+ {/* <Box display="flex" gap={2}>
           <Typography variant="caption">Terms & Conditions</Typography>
           <Typography variant="caption">Privacy Policy</Typography>
-          <Typography variant="caption">&copy; 2025 GlobeStay. All rights reserved.</Typography>
-        </Box>
+          <Typography variant="caption">Copyright &copy; 2025 GlobeStay Inc. All rights reserved.</Typography>
+        </Box> */}
+       <Box display="flex" gap={1} flexWrap="wrap"> 
+  <Typography variant="caption" component="a" href="/terms" sx={{ color: 'white', textDecoration: 'none' }}>
+    Terms & Conditions
+  </Typography>
+  <Typography variant="caption">|</Typography>
+  <Typography variant="caption" component="a" href="/privacy" sx={{ color: 'white', textDecoration: 'none' }}>
+    Privacy Policy
+  </Typography>
+  <Typography variant="caption">|</Typography>
+  <Typography variant="caption">Copyright &copy; 2025 GlobeStay. All rights reserved.</Typography>
+  </Box>
 
+        
         <Box display="flex" gap={1}>
           <IconButton sx={{ color: 'white' }}><Facebook /></IconButton>
           <IconButton sx={{ color: 'white' }}><Twitter /></IconButton>
           <IconButton sx={{ color: 'white' }}><Instagram /></IconButton>
         </Box>
       </Box>
-    </Box>
+     </Box>
   );
 };
 

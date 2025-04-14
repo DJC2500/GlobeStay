@@ -2,11 +2,11 @@ import React from 'react';
 import { Box, Grid, Typography, TextField, Button, Card, CardMedia } from '@mui/material';
 
 const destinations = [
-  { city: 'Dubai', image: '/images/dubai.jpg' },
-  { city: 'Paris', image: '/images/paris.jpg' },
-  { city: 'Tbilisi', image: '/images/tbilisi.jpg' },
-  { city: 'Istanbul', image: '/images/istanbul.jpg' },
-  { city: 'Taiwan', image: '/images/taiwan.jpg' },
+  { city: 'Dubai', image: 'hero2.jpg' },
+  { city: 'Paris', image: 'hero2.jpg'  },
+  { city: 'Tbilisi', image: 'hero2.jpg'  },
+  { city: 'Istanbul', image: 'hero2.jpg'  },
+  { city: 'Taiwan', image: 'hero2.jpg' },
 ];
 
 const TrendingSection = () => {
@@ -15,12 +15,10 @@ const TrendingSection = () => {
       <Grid container spacing={4}>
         {/* Left side - Newsletter */}
         <Grid item xs={12} md={6}>
-          <Typography variant="h5" fontWeight="bold" gutterBottom>
-            Stay in the know
-          </Typography>
+          <Typography variant="h5" fontWeight="bold" gutterBottom> Stay in the know </Typography>
           <Typography variant="body1" sx={{ maxWidth: 450, mb: 3 }}>
-            Sign up to get marketing emails from Bookme.com, including promotions, rewards, travel experiences,
-            and information about Bookme.com and Booking.com Transport Limited’s products and services.
+            Sign up to get marketing emails from GlobeStay.com, including promotions, rewards, travel experiences,
+            and information about GlobeStay.com Transport Limited’s products and services.
           </Typography>
           <Box sx={{ display: 'flex', gap: 2, maxWidth: 500, mb: 1 }}>
             <TextField
