@@ -2,11 +2,11 @@ import React from 'react';
 import { Box, Grid, Typography, TextField, Button, Card, CardMedia } from '@mui/material';
 
 const destinations = [
-  { city: 'Dubai', image: 'hero2.jpg' },
-  { city: 'Paris', image: 'hero2.jpg'  },
-  { city: 'Tbilisi', image: 'hero2.jpg'  },
-  { city: 'Istanbul', image: 'hero2.jpg'  },
-  { city: 'Taiwan', image: 'hero2.jpg' },
+  { city: 'Dubai', image: 'dubai.jpg' },
+  { city: 'Paris', image: 'paris.jpg'  },
+  { city: 'London', image: 'london.jpg'  },
+  { city: 'Tokyo', image: 'tokyo.jpg'  },
+  { city: 'New York', image: 'newyork.jpg' },
 ];
 
 const TrendingSection = () => {
@@ -93,3 +93,5 @@ const TrendingSection = () => {
 };
 
 export default TrendingSection;
+
+

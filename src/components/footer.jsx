@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Grid, TextField, Typography, IconButton, Link} from '@mui/material';
+import { Box, Button, Grid, TextField, Typography, IconButton} from '@mui/material';
 import { Facebook, Twitter, Instagram } from '@mui/icons-material';
  
 
@@ -16,7 +16,7 @@ const Footer = () => {
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <TextField
                 variant="standard"
-                placeholder="Email address"
+                placeholder="Email address*"
                 InputProps={{
                   disableUnderline: true,
                   sx: { bgcolor: 'white', borderRadius: 1, px: 1, py: 0.5, mr: 1, flex: 1 },
